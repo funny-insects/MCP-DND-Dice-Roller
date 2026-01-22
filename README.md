@@ -39,6 +39,28 @@ If you installed `mcp[cli]`, you can use the MCP CLI tooling (exact commands may
 mcp dev main.py
 ```
 
+## Tests
+
+Using `uv`:
+
+```bash
+uv sync --extra dev
+uv run python -m pytest
+```
+
+### Generate Task 2 proof artifacts
+
+This repo includes a script that generates the exact text artifacts used as proof for Parent Task 2:
+
+```bash
+bash scripts/make_task2_artifacts.sh
+```
+
+Outputs:
+- `artifacts/pytest_task2.txt`
+- `artifacts/manual_task2.txt`
+- `artifacts/rejections_task2.txt`
+
 ## Tool
 
 Tool name: `roll_dice`

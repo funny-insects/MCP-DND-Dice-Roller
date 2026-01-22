@@ -8,6 +8,11 @@ dependencies = [
 	"mcp[cli]",
 ]
 
+[project.optional-dependencies]
+dev = [
+	"pytest",
+]
+
 [project.scripts]
 mcp-dnd-dice-roller = "mcp_dnd_dice_roller.server:run"
 

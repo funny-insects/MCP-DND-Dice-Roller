@@ -1,6 +1,5 @@
-def main():
-    print("Hello from mcp-dnd-dice-roller!")
+from mcp_dnd_dice_roller.server import mcp, run
 
 
 if __name__ == "__main__":
-    main()
+    run()
